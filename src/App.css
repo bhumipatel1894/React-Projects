@@ -1,0 +1,34 @@
+.container{display: inline;}
+.cardItem{
+  flex-basis: 23%;
+  margin: 1%;
+  height: 200px;
+  background-color: beige;
+}
+.row{
+  width: 1320px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu {
+  width: 80%;
+  position: fixed;
+  left: -100%;
+  transition: 0.5s;
+  height: 100vh;
+  background-color: yellow;
+}
+.menu ul li, ul li{list-style-type: none; padding: 10px 0px;}
+.micon {position: absolute; right: 10px;} 
+.activemenu {
+  left: 0%;
+}
+.categories{
+  background: #e7e7e761;
+  padding: 20px 0px;
+  border-radius: 6px;
+}
+.card-body img{
+  width: 200px; height: auto;
+}
