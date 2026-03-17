@@ -1,4 +1,6 @@
+"use client";
 import React from 'react'
+import Link from 'next/link';
 
 function page() {
   return (
@@ -22,7 +24,9 @@ function page() {
                         collections and outstanding customer support.
                     </p>
                 </div>
-                <div className="bg-gradient-to-br from-blue-400 to-purple-500 h-96 rounded-lg"></div>
+                <div className="bg-gradient-to-br from-blue-400 to-purple-500 h-96 rounded-lg" style={{backgroundImage: `url('/images/about.jpg')`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'left left',  backgroundOpacity: '0.3'}}>
+                    <img src="/images/about.jpg" alt="Our Mission" className="w-full h-full object-cover rounded-lg" />
+                </div>
             </div>
         </section>
 
@@ -51,7 +55,8 @@ function page() {
         <section className="px-6 py-16 bg-slate-900 text-white text-center">
             <h2 className="text-4xl font-bold mb-4">Ready to Shop?</h2>
             <button className="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-lg font-bold transition">
-                Start Shopping Now
+                <Link href="/shop"> 
+                Start Shopping Now </Link>
             </button>
         </section>
     </div>
